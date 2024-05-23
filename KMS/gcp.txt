@@ -1,0 +1,47 @@
+# Liste toutes les régions disponibles pour Google Cloud Compute
+
+gcloud compute regions list
+
+# Met à jour le package `google-cloud-kms` avec pip
+
+pip install --upgrade "google-cloud-kms"
+
+# Crée un fichier nommé `test.txt` et y écrit "Bonjour on vous deteste"
+
+echo Bonjour on vous deteste > test.txt
+
+# Affiche le contenu du fichier `test.txt`
+
+type test.txt
+
+# Liste les keyrings disponibles dans la région `us-central1`
+
+gcloud kms keyrings list --location us-central1
+
+# Crée un keyring nommé `sals-kms` dans la région `us-central1`
+
+gcloud kms keyrings create sals-kms --location us-central1
+
+# Liste les clés disponibles dans le keyring `sals-kms` dans la région `us-central1`
+
+gcloud kms keys list --location us-central1 --keyring sals-kms
+
+# Crée une clé nommée `sals-key` dans le keyring `sals-kms` avec l'objectif d'encryptage, dans la région `us-central1`
+
+gcloud kms keys create sals-key --location us-central1 --keyring sals-kms --purpose encryption
+
+# Crypte le fichier `test.txt` en utilisant la clé `sals-key` du keyring `sals-kms`. Le résultat chiffré est stocké dans `claire.txt.enc`
+
+gcloud kms encrypt --key=sals-key --keyring=sals-kms --location=us-central1 --plaintext-file=test.txt --ciphertext-file=claire.txt.enc
+
+# Affiche le contenu du fichier chiffré `claire.txt.enc`
+
+type claire.txt.enc
+
+# Décrypte le fichier chiffré `claire.txt.enc` en utilisant la clé `sals-key` du keyring `sals-kms`. Le résultat déchiffré est stocké dans `decrypted.txt`
+
+gcloud kms decrypt --key=sals-key --keyring=sals-kms --location=us-central1 --ciphertext-file="claire.txt.enc" --plaintext-file="decrypted.txt"
+
+# Affiche le contenu du fichier déchiffré `decrypted.txt`
+
+type decrypted.txt
