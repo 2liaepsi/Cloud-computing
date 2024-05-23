@@ -13,14 +13,51 @@ Pour obtenir ce dépôt, lancez la commande suivante dans votre terminal compati
 ```sh
 git clone https://github.com/2liaepsi/Cloud-computing.git
 ```
+
+## Création et activation d'un environnement virtuel
+
+Pour isoler les dépendances de votre projet, il est recommandé de créer un environnement virtuel. Suivez les étapes ci-dessous :
+
+### Installation de `virtualenv`
+
+Si `virtualenv` n'est pas déjà installé, installez-le en utilisant pip :
+
+```sh
+pip install virtualenv
+```
+
+### Création de l'environnement virtuel
+
+Dans le répertoire du projet cloné, créez un environnement virtuel :
+
+```sh
+cd Cloud-computing
+virtualenv venv
+```
+
+### Activation de l'environnement virtuel
+
+Activez l'environnement virtuel avec la commande appropriée à votre système d'exploitation :
+
+Pour Linux/macOS :
+
+```sh
+source venv/bin/activate
+```
+
+Pour Windows :
+
+```sh
+venv\Scripts\activate
+```
+
 ## Installation de Django
 
-Vous aurez besoin de Django installé sur votre ordinateur pour exécuter cette application. Rendez-vous sur [le guide de téléchargement de Django](https://www.djangoproject.com/download/) pour plus d'informations.
+Vous aurez besoin de Django installé dans votre environnement virtuel pour exécuter cette application. Rendez-vous sur [le guide de téléchargement de Django](https://www.djangoproject.com/download/) pour plus d'informations.
 
 ### Télécharger Django en utilisant pip
 
 ```sh
-sudo apt install python3-pip -y
 pip install django
 ```
 
@@ -30,6 +67,7 @@ Une fois que vous avez téléchargé Django, allez dans le répertoire du dépô
 
 ```sh
 cd Cloud-computing
+ls -lrt
 python3 manage.py makemigrations
 ```
 
@@ -61,4 +99,4 @@ python3 manage.py runserver
 
 Une fois le serveur démarré, rendez-vous sur [http://127.0.0.1:8000/Cloud-computing](http://127.0.0.1:8000/Cloud-computing) pour accéder à l'application.
 
-C'était assez simple, non ? Vous pouvez maintenant commencer à utiliser votre application todo !
+C'était assez simple, non ? Vous pouvez maintenant commencer à utiliser votre application !
