@@ -11,9 +11,8 @@ sudo apt-get update
 Pour obtenir ce dépôt, lancez la commande suivante dans votre terminal compatible avec git :
 
 ```sh
-git clone https://github.com/yeshwanthlm/django-on-ec2.git
+git clone https://github.com/2liaepsi/Cloud-computing.git
 ```
-
 ## Installation de Django
 
 Vous aurez besoin de Django installé sur votre ordinateur pour exécuter cette application. Rendez-vous sur [le guide de téléchargement de Django](https://www.djangoproject.com/download/) pour plus d'informations.
@@ -30,7 +29,7 @@ pip install django
 Une fois que vous avez téléchargé Django, allez dans le répertoire du dépôt cloné et exécutez la commande suivante :
 
 ```sh
-cd django-on-ec2
+cd Cloud-computing
 python3 manage.py makemigrations
 ```
 
@@ -60,6 +59,6 @@ Démarrons le serveur pour mettre l'application en ligne. Utilisez la commande s
 python3 manage.py runserver
 ```
 
-Une fois le serveur démarré, rendez-vous sur [http://127.0.0.1:8000/todos](http://127.0.0.1:8000/todos) pour accéder à l'application.
+Une fois le serveur démarré, rendez-vous sur [http://127.0.0.1:8000/Cloud-computing](http://127.0.0.1:8000/Cloud-computing) pour accéder à l'application.
 
 C'était assez simple, non ? Vous pouvez maintenant commencer à utiliser votre application todo !
