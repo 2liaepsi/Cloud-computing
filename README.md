@@ -6,6 +6,14 @@
 sudo apt-get update
 ```
 
+## Installation de Python 3 et des outils nécessaires
+
+Installez Python 3 et les outils nécessaires pour créer des environnements virtuels :
+
+```sh
+sudo apt-get install python3 python3-venv python3-pip -y
+```
+
 ## Clonage du dépôt
 
 Pour obtenir ce dépôt, lancez la commande suivante dans votre terminal compatible avec git :
@@ -16,15 +24,7 @@ git clone https://github.com/2liaepsi/Cloud-computing.git
 
 ## Création et activation d'un environnement virtuel
 
-Pour isoler les dépendances de votre projet, il est recommandé de créer un environnement virtuel. Suivez les étapes ci-dessous :
-
-### Installation de `virtualenv`
-
-Si `virtualenv` n'est pas déjà installé, installez-le en utilisant pip :
-
-```sh
-pip install virtualenv
-```
+Pour isoler les dépendances de votre projet, créez un environnement virtuel :
 
 ### Création de l'environnement virtuel
 
@@ -32,7 +32,7 @@ Dans le répertoire du projet cloné, créez un environnement virtuel :
 
 ```sh
 cd Cloud-computing
-virtualenv venv
+python3 -m venv venv
 ```
 
 ### Activation de l'environnement virtuel
@@ -51,19 +51,17 @@ Pour Windows :
 venv\Scripts\activate
 ```
 
-## Installation de Django
+## Installation de Django et NumPy
 
-Vous aurez besoin de Django installé dans votre environnement virtuel pour exécuter cette application. Rendez-vous sur [le guide de téléchargement de Django](https://www.djangoproject.com/download/) pour plus d'informations.
-
-### Télécharger Django en utilisant pip
+Avec l'environnement virtuel activé, installez Django et NumPy en utilisant pip :
 
 ```sh
-pip install django
+pip install django numpy
 ```
 
 ## Configuration de l'application
 
-Une fois que vous avez téléchargé Django, allez dans le répertoire du dépôt cloné et exécutez la commande suivante :
+Une fois que vous avez installé Django, allez dans le répertoire du dépôt cloné et exécutez les commandes suivantes :
 
 ```sh
 cd Cloud-computing
@@ -96,6 +94,37 @@ Démarrons le serveur pour mettre l'application en ligne. Utilisez la commande s
 ```sh
 python3 manage.py runserver
 ```
+
+```sh
+python3 manage.py runserver 0.0.0.0:8000
+```
+```sh
+ls -lrt
+cd appli_crypt
+nano settings.py
+```
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/1.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/2.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/3.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/4.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/5.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/6.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/7.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/8.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/9.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/10.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/11.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/12.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/13.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/14.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/15.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/16.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/17.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/18.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/19.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/20.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/21.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/22.png)
 
 Une fois le serveur démarré, rendez-vous sur [http://127.0.0.1:8000/Cloud-computing](http://127.0.0.1:8000/Cloud-computing) pour accéder à l'application.
 
