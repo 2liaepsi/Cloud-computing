@@ -2,7 +2,7 @@ import boto3
 import base64
 
 # ID de la clé KMS à utiliser pour le chiffrement et le déchiffrement
-key_id = '5125b7ac-bc01-401e-8959-3cbd916d4b30'
+key_id = 'a49aa47f-422b-424d-bd9c-993b1f0b6f0a'
 
 def hello_kms():
     # Spécifiez la région AWS à utiliser
@@ -10,7 +10,7 @@ def hello_kms():
 
     # Créez une session Boto3 en spécifiant le profil AWS et la région à utiliser
     # 'profile_name' se réfère à un profil AWS configuré dans ~/.aws/credentials
-    session = boto3.session.Session(profile_name='Assietou', region_name=region_name)
+    session = boto3.session.Session(profile_name='MAD', region_name=region_name)
 
     # Crée un client KMS utilisant la session Boto3
     client = session.client('kms')
@@ -29,7 +29,7 @@ def hello_kms():
     
     # Convertit le blob encodé en base64 en chaîne de caractères UTF-8
     chiff = blob.decode('utf-8')
-    
+    print("\n") 
     # Affiche le texte chiffré en base64
     print('Chiffré =', chiff)
     print("\n")
