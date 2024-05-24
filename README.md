@@ -1,4 +1,55 @@
-# Cloud-computing
+# Cloud-computing : Chiffrement et Dechiffrement en utilisant les cles de AWS
+
+## Préparation de l'environnement 
+
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/23.png)
+
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/24.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/25.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/26.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/27.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/28.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/29.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/30.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/31.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/32.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/33.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/34.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/35.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/36.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/37.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/38.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/39.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/40.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/41.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/42.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/43.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/44.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/45.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/46.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/47.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/48.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/49.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/50.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/51.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/52.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/53.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/54.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/55.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/56.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/57.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/58.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/59.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/60.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/61.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/62.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/63.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/64.png)
+![Logo GitHub](https://github.com/2liaepsi/Cloud-computing/blob/main/1/65.png)
+
+
+
+# Cloud-computing : Deploiement d'une appli sur AWS
 
 ## Mise à jour du système
 
