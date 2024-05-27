@@ -183,3 +183,57 @@ nano settings.py
 Une fois le serveur démarré, rendez-vous sur [http://127.0.0.1:8000/Cloud-computing](http://127.0.0.1:8000/Cloud-computing) pour accéder à l'application.
 
 C'était assez simple, non ? Vous pouvez maintenant commencer à utiliser votre application !
+
+
+# Insertion d'un certificat 
+
+```sh
+ssh -i "Mai.pem" ubuntu@ec2-34-227-221-118.compute-1.amazonaws.com
+```
+```sh
+sudo apt install apache2
+```
+```sh
+systemctl status apache2
+```
+```sh
+sudo apt-get install apache2 openssl -y
+```
+```sh
+sudo openssl req -nodes -newkey rsa:2048 -keyout /etc/ssl/private/private.key -out /etc/ssl/private/request.csr
+```
+```sh
+sudo openssl x509 -in /etc/ssl/private/request.csr -out /etc/ssl/private/certificate.crt -req -signkey /etc/ssl/private/private.key -days 365
+```
+```sh
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+```
+   Utilisez les chemins suivants pour définir l'emplacement de votre certificat SSL :
+
+SSLCertificateFile /etc/ssl/private/certificate.crt
+SSLCertificateKeyFile /etc/ssl/private/private.key
+
+```sh
+sudo a2ensite default-ssl.conf
+```
+```sh
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+
+Ajoutez 
+
+Redirect "/" https://Server-IP
+
+```sh
+sudo a2enmod ssl
+```
+```sh
+sudo a2enmod headers
+```
+```sh
+systemctl restart apache2
+```
+```sh
+sudo systemctl restart apache2
+
+```
